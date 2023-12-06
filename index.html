@@ -72,7 +72,7 @@
             var pacman = {
                 x:1,
                 y:1,
-
+                face:document.getElementById('pacman').style
             }
             function displayMap(map){
                 var output = '';
@@ -106,16 +106,19 @@
             document.onkeydown = function(e){
                 if(e.keyCode == 39){ //right
                     pacman.x++;
-
+                    pacman.face.backgroundImage = "url('./assets/pacman-right.png')";
                 }
                 else if(e.keyCode == 37){ //left
                     pacman.x--;
+                    pacman.face.backgroundImage = "url('./assets/pacman-left.png')";
                 }
                 else if(e.keyCode == 38){ //top
                     pacman.y--;
+                    pacman.face.backgroundImage = "url('./assets/pacman-up.png')";
                 } 
                 else if(e.keyCode == 40){ //down
                     pacman.y++;
+                    pacman.face.backgroundImage = "url('./assets/pacman-down.png')";
                 }
 
                 displayPacman();
