@@ -30,22 +30,26 @@
                 background-position: center;
             }
 
-            .pacman{
+            div#pacman{
                 background-image: url('./assets/pacman-right.png');
                 background-size: 80%;
                 background-repeat: no-repeat;
                 background-position: center;
+                width: 40px;
+                height: 40px;
+                position: absolute;
             }
         </style>
     </head>
     <body>
         <div id="map"></div>
-    
+        <div id="pacman" style="top:50px; left:50px"></div>
+        
         <script type="text/javascript">
             
             const mapOne = [
                 [2,2,2,2,2,2,2,2,2,2,2,2,2,2],
-                [2,1,1,1,1,1,1,1,1,1,1,1,1,2],
+                [2,0,1,1,1,1,1,1,1,1,1,1,1,2],
                 [2,1,1,1,1,1,1,1,1,1,1,1,1,2],
                 [2,1,1,1,1,1,1,1,1,1,1,1,1,2],
                 [2,1,1,1,2,2,2,2,2,1,1,1,1,2],
